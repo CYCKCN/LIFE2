@@ -1,4 +1,7 @@
 from flask_login import UserMixin
+from flask_wtf import FlaskForm
+import wtforms
+from wtforms.validators import InputRequired, Email, Length, Regexp
 
 time = ["0800", "0815", "0830", "0845", "0900", "0915", "0930", "0945", "1000", "1015", "1030", "1045", \
         "1100", "1115", "1130", "1145", "1200", "1215", "1230", "1245", "1300", "1315", "1330", "1345", \
@@ -7,7 +10,7 @@ time = ["0800", "0815", "0830", "0845", "0900", "0915", "0930", "0945", "1000", 
 
 class User(UserMixin):
     def __init__(self, id, name, auth):
-        self.id = str(id)
+        self.id = id
         self.name = name
         self.auth = auth
 
@@ -31,7 +34,7 @@ class Account(object):
         self.accountName = name # "example@example.com"
         self.accountPw = password # "examplePW"
         self.accountID = id # 00310
-        self.accountAuth = auth # "USER" / "ADMIN"
+        self.accountAuth = auth # "USER" / "STAFF"
         self.accountQRcode = QRcode
 
 class Item(object):
@@ -53,3 +56,6 @@ class Order(object):
         self.orderEndTime = etime # "202212171030"
         self.orderStatus = orderStatus # "R" -> Reserved / "S" -> Solved
 
+class LoginForm(FlaskForm):
+    id = wtforms.StringField('id', validators=[InputRequired(), Length(max=30)])
+    password = wtforms.PasswordField('password', validators=[InputRequired(), Length(min=8, max=32)])
