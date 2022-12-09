@@ -31,7 +31,14 @@ class AccountDB():
         elif account["accountID"] != auth:
             return "Err: You Are Not Authorized!"
         else:
-            return "Info: Login successfully!" 
+            return "Info: Login successfully!"
+        
+    def signup(self, accountName, accountPw, accountID, auth="USER"):
+        if self.db.find_one({"accountName": accountName}):
+            return "Err: Account Exists!"
+        newAccount = Account(accountName, accountPw, accountID, auth=auth)
+        self.db.insert_one(newAccount.__dict__)
+        return "Info: Register USER Account Successfully"
 
 class ItemDB():
     def __init__(self, db):
