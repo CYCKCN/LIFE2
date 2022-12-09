@@ -1,19 +1,39 @@
-
-/* alatsi-regular - latin */
+/* cyrillic-ext */
 @font-face {
-    font-family: 'Alatsi';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/alatsi-v10-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/alatsi-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/alatsi-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/alatsi-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/alatsi-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/alatsi-v10-latin-regular.svg#Alatsi') format('svg'); /* Legacy iOS */
+  font-family: 'Alatsi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/alatsi/v10/TK3iWkUJAxQ2nLN2FD8Gl-1PK62t.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-
-
+/* vietnamese */
+@font-face {
+  font-family: 'Alatsi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/alatsi/v10/TK3iWkUJAxQ2nLN2Fj8Gl-1PK62t.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Alatsi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/alatsi/v10/TK3iWkUJAxQ2nLN2Fz8Gl-1PK62t.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Alatsi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/alatsi/v10/TK3iWkUJAxQ2nLN2GT8Gl-1PKw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 * {
     box-sizing: border-box;
@@ -21,14 +41,34 @@
   body {
     font-size: 14px;
   }
-  .page-frame {
+  .page-frame-login {
     width: 390px;
     height: 844px;
-    background: rgba(255,255,255,1);
+    background: white;
     opacity: 1;
     position: relative;
     top: 0px;
     left: 0px;
+    overflow: hidden;
+  }
+  .page-frame {
+    width: 390px;
+    height: 844px;
+    background: var(--mainGreen2);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .bottom-div {
+    width: 390px;
+    height: 140px;
+    background: white;
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
     overflow: hidden;
   }
   .login-button {
@@ -39,25 +79,13 @@
     background: var(--mainGreen1);
     opacity: 1;
     position: absolute;
-    bottom: 250px;
-    left: 30px;
+    left: 0px;
+    top: 200px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: hidden;
-  }
-  .v6_70 {
-    width: 51px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 21px;
-    left: 140px;
-    font-family: 'Alatsi';
-    font-weight: Bold;
-    font-size: 19px;
-    opacity: 1;
-    text-align: center;
   }
   .logo {
     width: 156px;
@@ -94,7 +122,7 @@
   }
   .login-div {
     width: 328px;
-    height: 130px;
+    height: 300px;
     opacity: 1;
     position: absolute;
     top: 345px;
@@ -131,30 +159,6 @@
     border: 0.6px solid var(--mainBlue1);
     border-radius: 10px;
     overflow: hidden;
-  }
-  .v6_82 {
-    width: 120px;
-    color: rgba(109,105,105,1);
-    position: absolute;
-    top: 14px;
-    left: 17px;
-    font-family: 'Alatsi';
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
-    text-align: left;
-  }
-  .v6_83 {
-    width: 105px;
-    color: rgba(109,105,105,1);
-    position: absolute;
-    top: 73px;
-    left: 17px;
-    font-family: 'Alatsi';
-    font-weight: Regular;
-    font-size: 15px;
-    opacity: 1;
-    text-align: left;
   }
   .forget-password {
     width: 150px;
@@ -246,38 +250,6 @@
     background: #4B8173;
     opacity: 0.2;
   }
-  .v6_104 {
-    width: 8px;
-    height: 8px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 20px;
-    overflow: hidden;
-  }
-  .v6_105 {
-    width: 8px;
-    height: 8px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 50%;
-  }
-  .v6_106 {
-    width: 8px;
-    height: 8px;
-    background: rgba(36,107,253,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-
-
 
   :root {
     --mainGreen1: #274E45;

@@ -2,14 +2,10 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Almarai&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Outfit&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet" />
   </head>
 
   <body>
-    <div class="page-frame">
+    <div class="page-frame-login">
       <span class="circle1"></span>
       <span class="circle2"></span>
 
@@ -18,26 +14,19 @@
         <span class="logo-2">2</span>
       </div>
 			
-			
       <div class="login-div">
         <form>
-          <input class="login-input1" type="text" name="username" placeholder="Enter staff acount">
-          <input class="login-input2" type="text" name="password" placeholder="Enter password">
+          <input class="login-input1" type="text" name="username" placeholder="Enter staff acount" required>
+          <input class="login-input2" type="password" name="password" placeholder="Enter password" required>
           <button class="forget-password" type="button">Forget Password?</button>
-          
+          <button type="button" class="login-button" value="Submit">Login</button>
         </form>
-        
       </div>
-
-      <button type="button" class="login-button">Login</button>
-
 
       <div class="bottom-bar">
         <span class="bottom-head">Staff Management</span>
         <span class="bottom-body">Manage status of items on sale and update detail information for each items.</span>
       </div>
-
-
     </div>
   </body>
 </html>
