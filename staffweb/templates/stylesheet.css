@@ -1,0 +1,352 @@
+
+/* alatsi-regular - latin */
+@font-face {
+    font-family: 'Alatsi';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/alatsi-v10-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/alatsi-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/alatsi-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/alatsi-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/alatsi-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/alatsi-v10-latin-regular.svg#Alatsi') format('svg'); /* Legacy iOS */
+}
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .v6_62 {
+    width: 390px;
+    height: 844px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .login-button {
+    width: 370px;
+    height: 40px;
+    font-family: 'Alatsi';
+    color: white;
+    background: var(--mainGreen1);
+    opacity: 1;
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+  .v6_70 {
+    width: 51px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 21px;
+    left: 140px;
+    font-family: 'Alatsi';
+    font-weight: Bold;
+    font-size: 19px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v6_73 {
+    width: 156px;
+    height: 96px;
+    background: url("../images/v6_73.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 216px;
+    left: 116px;
+    overflow: hidden;
+  }
+  .v6_74 {
+    width: 139px;
+    color: rgba(67,81,81,1);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: 'Alatsi';
+    font-weight: Bold;
+    font-size: 64px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v6_78 {
+    width: 14px;
+    color: rgba(67,81,81,1);
+    position: absolute;
+    top: 0px;
+    left: 142px;
+    font-family: 'Alatsi';
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v6_113 {
+    width: 328px;
+    height: 127px;
+    background: url("../images/v6_113.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 345px;
+    left: 30px;
+    overflow: hidden;
+  }
+  .login-input1 {
+    width: 328px;
+    height: 48px;
+    font-family: 'Alatsi';
+    color: var(--mainGrey1);
+    background: url("../images/v6_80.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0.6px solid var(--mainBlue1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .login-input2 {
+    width: 328px;
+    height: 48px;
+    font-family: 'Alatsi';
+    color: var(--mainGrey1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 59px;
+    left: 0px;
+    border: 0.6px solid var(--mainBlue1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .v6_82 {
+    width: 120px;
+    color: rgba(109,105,105,1);
+    position: absolute;
+    top: 14px;
+    left: 17px;
+    font-family: 'Alatsi';
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v6_83 {
+    width: 105px;
+    color: rgba(109,105,105,1);
+    position: absolute;
+    top: 73px;
+    left: 17px;
+    font-family: 'Alatsi';
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v6_84 {
+    width: 107px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 111px;
+    left: 221px;
+    font-family: 'Alatsi';
+    font-weight: Regular;
+    font-size: 13px;
+    opacity: 1;
+    text-align: left;
+  }
+  .bottom-bar {
+    width: 390px;
+    height: 140px;
+    background: var(--mainGreen2);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+  }
+  .abondon1 {
+    width: 390px;
+    height: 140px;
+    background: var(--mainGreen2);
+    opacity: 0.8500000238418579;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .bottom-head {
+    width: 242px;
+    color: white;
+    position: absolute;
+    top: 24px;
+    left: 29px;
+    font-family: 'Alatsi';
+    font-weight: Bold;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  .bottom-body {
+    width: 343px;
+    color: white;
+    position: absolute;
+    top: 65px;
+    left: 29px;
+    font-family: 'Alatsi';
+    font-weight: Light;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v6_103 {
+    width: 70px;
+    height: 8px;
+    background: url("../images/v6_103.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 816px;
+    left: 288px;
+    overflow: hidden;
+  }
+  .v6_104 {
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    overflow: hidden;
+  }
+  .v6_105 {
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  .v6_106 {
+    width: 8px;
+    height: 8px;
+    background: rgba(36,107,253,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v6_107 {
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,1);
+    opacity: 0.699999988079071;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  .v6_108 {
+    width: 8px;
+    height: 8px;
+    background: rgba(36,107,253,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 41px;
+    overflow: hidden;
+  }
+  .v6_109 {
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,1);
+    opacity: 0.699999988079071;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  .v6_110 {
+    width: 8px;
+    height: 8px;
+    background: rgba(36,107,253,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 62px;
+    overflow: hidden;
+  }
+  .v6_111 {
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,1);
+    opacity: 0.699999988079071;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  .v6_120 {
+    width: 445px;
+    height: 406px;
+    background: rgba(75,129,115,1);
+    opacity: 0.20000000298023224;
+    position: absolute;
+    top: 210px;
+    left: 37px;
+    border-radius: 50%;
+  }
+  .v6_121 {
+    width: 342px;
+    height: 342px;
+    background: rgba(75,129,115,1);
+    opacity: 0.20000000298023224;
+    position: absolute;
+    top: 175px;
+    left: 207px;
+    border-radius: 50%;
+  }
+
+  :root {
+    --mainGreen1: #274E45;
+    --mainGreen2: #4B8173;
+    --mainGreen3: #B1CFC9;
+    --mainBlue1: #222E3C;
+    --mainBlue2: #455D74;
+    --mainOrgange: #F26542;
+    --mainYellow: #FEE44C;
+    
+    --mainGrey1: #6C6A6A;
+    --mainGrey2: #F2F2F2;
+  }
