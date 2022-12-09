@@ -13,13 +13,15 @@
          url('../fonts/alatsi-v10-latin-regular.svg#Alatsi') format('svg'); /* Legacy iOS */
 }
 
+
+
 * {
     box-sizing: border-box;
   }
   body {
     font-size: 14px;
   }
-  .v6_62 {
+  .page-frame {
     width: 390px;
     height: 844px;
     background: rgba(255,255,255,1);
@@ -30,15 +32,15 @@
     overflow: hidden;
   }
   .login-button {
-    width: 370px;
+    width: 328px;
     height: 40px;
     font-family: 'Alatsi';
     color: white;
     background: var(--mainGreen1);
     opacity: 1;
     position: absolute;
-    top: 600px;
-    left: 10px;
+    bottom: 250px;
+    left: 30px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -57,22 +59,18 @@
     opacity: 1;
     text-align: center;
   }
-  .v6_73 {
+  .logo {
     width: 156px;
     height: 96px;
-    background: url("../images/v6_73.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     opacity: 1;
     position: absolute;
     top: 216px;
-    left: 116px;
+    left: 135px;
     overflow: hidden;
   }
-  .v6_74 {
+  .logo-life {
     width: 139px;
-    color: rgba(67,81,81,1);
+    color: var(--mainGreen1);
     position: relative;
     top: 0px;
     left: 0px;
@@ -82,25 +80,21 @@
     opacity: 1;
     text-align: center;
   }
-  .v6_78 {
-    width: 14px;
-    color: rgba(67,81,81,1);
+  .logo-2 {
+    width: 16px;
+    color: var(--mainGreen1);
     position: absolute;
     top: 0px;
-    left: 142px;
+    left: 110px;
     font-family: 'Alatsi';
     font-weight: Bold;
-    font-size: 24px;
+    font-size: 32px;
     opacity: 1;
     text-align: center;
   }
-  .v6_113 {
+  .login-div {
     width: 328px;
-    height: 127px;
-    background: url("../images/v6_113.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    height: 130px;
     opacity: 1;
     position: absolute;
     top: 345px;
@@ -112,10 +106,8 @@
     height: 48px;
     font-family: 'Alatsi';
     color: var(--mainGrey1);
-    background: url("../images/v6_80.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: none;
+    padding-left: 20px;
     opacity: 1;
     position: absolute;
     top: 0px;
@@ -130,9 +122,8 @@
     height: 48px;
     font-family: 'Alatsi';
     color: var(--mainGrey1);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: none;
+    padding-left: 20px;
     opacity: 1;
     position: absolute;
     top: 59px;
@@ -165,13 +156,15 @@
     opacity: 1;
     text-align: left;
   }
-  .v6_84 {
-    width: 107px;
-    color: rgba(0,0,0,1);
+  .forget-password {
+    width: 150px;
+    color: var(--mainGreen1);
     position: absolute;
     top: 111px;
     left: 221px;
     font-family: 'Alatsi';
+    border: none;
+    background: none;
     font-weight: Regular;
     font-size: 13px;
     opacity: 1;
@@ -224,18 +217,34 @@
     opacity: 1;
     text-align: left;
   }
-  .v6_103 {
+  .top-bar {
     width: 70px;
     height: 8px;
-    background: url("../images/v6_103.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 816px;
+    top: 0px;
     left: 288px;
     overflow: hidden;
+  }
+  .circle1 {
+    border-radius: 50%;
+    position: absolute;
+    width: 445px;
+    height: 406px;
+    left: -37px;
+    top: -210px;
+    background: #4B8173;
+    opacity: 0.2;
+  }
+  .circle2 {
+    border-radius: 50%;
+    position: absolute;
+    width: 342px;
+    height: 342px;
+    left: 207px;
+    top: -175px;
+    background: #4B8173;
+    opacity: 0.2;
   }
   .v6_104 {
     width: 8px;
