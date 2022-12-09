@@ -34,6 +34,16 @@ class Account(object):
         self.accountAuth = auth # "USER" / "ADMIN"
         self.accountQRcode = QRcode
 
+class Item(object):
+    def __init__(self, id, owner, etime, name, price, info, status):
+        self.itemID = id # "3387220221217"
+        self.itemOwner = owner # "33872" / "-1"
+        self.itemDate = etime # "202212171000"
+        self.itemName = name
+        self.itemPrice = price
+        self.itemInfo = info
+        self.itemStatus = status # "In Stock" / "On Sale" / "Sold Out"
+
 class Order(object):
     def __init__(self, id, stime, etime, orderType="SELL", itemid=None, orderStatus="R"):
         self.orderID = id # "3387220221217"
@@ -43,12 +53,3 @@ class Order(object):
         self.orderEndTime = etime # "202212171030"
         self.orderStatus = orderStatus # "R" -> Reserved / "S" -> Solved
 
-class Item(object):
-    def __init__(self, id, owner, etime, orderType="SELL", itemid=None, orderStatus="R"):
-        self.itemID = id # "3387220221217"
-        self.itemOwner = owner
-        self.orderItemID = itemid # None / "3387220221217003"
-        self.orderType = orderType # "SELL" / "BUY"
-        self.orderStartTime = stime # "202212171000"
-        self.orderEndTime = etime # "202212171030"
-        self.orderStatus = orderStatus # "R" -> Reserved / "S" -> Solved
