@@ -5,7 +5,7 @@ from utils import User, Account
 from werkzeug.security import generate_password_hash, check_password_hash
     
 def connection(dbname):
-    addr = "mongodb+srv://LIFE2:lifeforever@life2.dwrako7.mongodb.net/?retryWrites=true&w=majority"
+    addr = "mongodb+srv://admin:admin@life2.dwrako7.mongodb.net/?retryWrites=true&w=majority"
     client = MongoClient(addr)
     db = client[dbname]
     return db
