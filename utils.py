@@ -42,3 +42,13 @@ class Order(object):
         self.orderStartTime = stime # "202212171000"
         self.orderEndTime = etime # "202212171030"
         self.orderStatus = orderStatus # "R" -> Reserved / "S" -> Solved
+
+class Item(object):
+    def __init__(self, id, owner, etime, orderType="SELL", itemid=None, orderStatus="R"):
+        self.itemID = id # "3387220221217"
+        self.itemOwner = owner
+        self.orderItemID = itemid # None / "3387220221217003"
+        self.orderType = orderType # "SELL" / "BUY"
+        self.orderStartTime = stime # "202212171000"
+        self.orderEndTime = etime # "202212171030"
+        self.orderStatus = orderStatus # "R" -> Reserved / "S" -> Solved
