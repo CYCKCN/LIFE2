@@ -276,76 +276,8 @@
     left: 0px;
     overflow: hidden;
   }
-  .v6_107 {
-    width: 8px;
-    height: 8px;
-    background: rgba(255,255,255,1);
-    opacity: 0.699999988079071;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 50%;
-  }
-  .v6_108 {
-    width: 8px;
-    height: 8px;
-    background: rgba(36,107,253,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 41px;
-    overflow: hidden;
-  }
-  .v6_109 {
-    width: 8px;
-    height: 8px;
-    background: rgba(255,255,255,1);
-    opacity: 0.699999988079071;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 50%;
-  }
-  .v6_110 {
-    width: 8px;
-    height: 8px;
-    background: rgba(36,107,253,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 62px;
-    overflow: hidden;
-  }
-  .v6_111 {
-    width: 8px;
-    height: 8px;
-    background: rgba(255,255,255,1);
-    opacity: 0.699999988079071;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 50%;
-  }
-  .v6_120 {
-    width: 445px;
-    height: 406px;
-    background: rgba(75,129,115,1);
-    opacity: 0.20000000298023224;
-    position: absolute;
-    top: 210px;
-    left: 37px;
-    border-radius: 50%;
-  }
-  .v6_121 {
-    width: 342px;
-    height: 342px;
-    background: rgba(75,129,115,1);
-    opacity: 0.20000000298023224;
-    position: absolute;
-    top: 175px;
-    left: 207px;
-    border-radius: 50%;
-  }
+
+
 
   :root {
     --mainGreen1: #274E45;
