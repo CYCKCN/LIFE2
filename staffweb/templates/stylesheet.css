@@ -45,6 +45,11 @@
     margin-left: 0px;
     margin-top: 0px;
   }
+  .reservation-name {
+    font-family: 'Alatsi';
+    font-size: 12px;
+    color: black;
+  }
   #icons-div {
     position: absolute;
     width: 350px;
