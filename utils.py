@@ -56,6 +56,6 @@ class Order(object):
         self.orderEndTime = etime # "202212171030"
         self.orderStatus = orderStatus # "R" -> Reserved / "S" -> Solved
 
-class LoginForm(FlaskForm):
-    id = wtforms.StringField('id', validators=[InputRequired(), Length(max=30)])
-    password = wtforms.PasswordField('password', validators=[InputRequired(), Length(min=8, max=32)])
+# class LoginForm(FlaskForm):
+#     id = wtforms.StringField('id', validators=[InputRequired(), Length(max=30)])
+#     password = wtforms.PasswordField('password', validators=[InputRequired(), Length(min=8, max=32)])
