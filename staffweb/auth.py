@@ -34,8 +34,8 @@ def login():
                 login_user(User(id, username, "STAFF"))
                 return redirect(url_for('staff.main'))
             elif "Wrong Password!" in loginInfo:
-                return render_template('login.html', form=form, pass_right=False, register=True)
+                return render_template('login.html')
             else:
-                return render_template('login.html', form=form, pass_right=True, register=False)
+                return render_template('login.html')
 
-    return render_template('login.html', form=form, pass_right=True, register=True)
+    return render_template('login.html')
