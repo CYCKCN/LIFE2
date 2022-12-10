@@ -4,38 +4,40 @@ from flask import Blueprint, request, redirect, render_template, url_for
 from functools import wraps
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 
-from utils import LoginForm, User
+from utils import User
 from db import accountdb
 
 auth = Blueprint('auth', __name__)
 
-def check_login(f):
-    @wraps(f)
-    def wrapper(*args, **kwargs):
-        if not current_user.is_authenticated: 
-            return redirect(url_for('main'))
-        return f(*args, **kwargs)
-    return wrapper
+# def check_login(f):
+#     @wraps(f)
+#     def wrapper(*args, **kwargs):
+#         if not current_user.is_authenticated: 
+#             return redirect(url_for('staff.home'))
+#         return f(*args, **kwargs)
+#     return wrapper
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
-    print(current_user)
-    if current_user.is_authenticated: 
-        return redirect(url_for('staff.main'))
+
+    # if current_user.is_authenticated: 
+    #     return redirect(url_for('staff.home'))
     
-    form = LoginForm()
-    if request.method=='POST':
-        if form.validate():
-            id = form.id.data
-            password = form.password.data
+    if request.method == 'POST':
+        # id = request.form['nm']
+        # id = request.form['username']
+        id = request.form.get('username')
+        password = request.form.get('password')
+        submit = request.form.get('submit-button')
+
+        print(id, password, submit)
+
+        if submit == "Submit": 
             loginInfo = accountdb.login(id, password, "STAFF")
+            print(loginInfo)
             if "Login successfully!" in loginInfo:
                 username = accountdb.findUserName(id)
                 login_user(User(id, username, "STAFF"))
-                return redirect(url_for('staff.main'))
-            elif "Wrong Password!" in loginInfo:
-                return render_template('login.html')
-            else:
-                return render_template('login.html')
+                return redirect(url_for('staff.home'))
 
     return render_template('login.html')

@@ -19,7 +19,7 @@ login_manager = LoginManager()
 login_manager.init_app(staffweb)
 
 @login_manager.user_loader
-def load_user(user_id):
+def user_loader(user_id):
     account = accountdb.findUser(user_id)
     if not account: return None
     return User(id=account["accountID"], name=account["accountName"], auth=account["accountAuth"])

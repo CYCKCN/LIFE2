@@ -14,6 +14,9 @@ class AccountDB():
     def __init__(self, db):
         self.db = db["account"]
     
+    def cleardb(self):
+        self.db.delete_many({})
+
     def findUser(self, accountID):
         return self.db.find_one({"accountID": accountID})
     
@@ -28,7 +31,7 @@ class AccountDB():
             return "Err: Not Registered!"
         elif check_password_hash(account["accountPw"], accountPw) == False:
             return "Err: Wrong Password!"
-        elif account["accountID"] != auth:
+        elif account["accountAuth"] != auth:
             return "Err: You Are Not Authorized!"
         else:
             return "Info: Login successfully!"
@@ -36,7 +39,7 @@ class AccountDB():
     def signup(self, accountName, accountPw, accountID, auth="USER"):
         if self.db.find_one({"accountName": accountName}):
             return "Err: Account Exists!"
-        newAccount = Account(accountName, accountPw, accountID, auth=auth)
+        newAccount = Account(accountName, generate_password_hash(accountPw), accountID, auth=auth)
         self.db.insert_one(newAccount.__dict__)
         return "Info: Register USER Account Successfully"
 
