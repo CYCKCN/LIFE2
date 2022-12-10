@@ -72,11 +72,50 @@
   .info-div {
     display: flex;
     flex-direction: column;
-    height: 90px;
+    height: 40px;
     width: 290px;
     padding-left: 10px;
     padding-top: 25px;
     text-align: left;
+  }
+  .info-div-left {
+    position: relative;
+    top: 5px;
+    height: 50px;
+    width: 190px;
+    padding-left: 10px;
+    padding-top: 17px;
+    text-align: left;
+  }
+  .info-div-right {
+    position: relative;
+    top: 5px;
+    height: 50px;
+    width: 120px;
+    padding-top: 17px;
+    padding-right: 20px;
+    color: var(--mainOrgange);
+    text-align: right;
+
+  }
+  .name-txt {
+    font-family: 'Alatsi';
+    font-size: 20px;
+  }
+  .category-txt {
+    font-family: 'Alatsi';
+    font-size: 12px;
+    color: white;
+    border: var(--mainGreen2);
+    border-radius: 10px;
+    background: var(--mainGreen2);
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .price-txt {
+    font-family: 'Alatsi';
+    font-size: 20px;
   }
   #bar-icons-div {
     position: absolute;
@@ -130,7 +169,45 @@
     width: 370px;
     left: 10px;
     top: 150px;
-    height: 400px;
+    height: 560px;
+    overflow-y: scroll;
+  }
+  .home-reservation::-webkit-scrollbar {
+    display: none;
+  }
+  .items-block {
+    position: relative;
+    width: 370px;
+    left: 0px;
+    top: 0px;
+    height: 272px;
+    background: white;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+    border: none;
+  }
+  .image-div {
+    position: absolute;
+    width: 370px;
+    left: 0px;
+    top: 0px;
+    height: 200px;
+    background: none;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url('sample-image.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+  }
+  .description-div {
+    position: absolute;
+    width: 370px;
+    left: 0px;
+    top: 190px;
+    height: 50px;
+    border: none;
+    display: flex;
+    flex-direction: row;
   }
   .single-reservation {
     width: 360px;
@@ -167,6 +244,15 @@
   .icon-out {
     color: var(--mainBlue2);
   }
+  .icon-onsale {
+    color: var(--mainGreen2);
+  }
+  .icon-instock {
+    color: var(--mainGreen1);
+  }
+  .icon-soldout {
+    color: var(--mainGreen3);
+  }
   .icon-txt0 {
     color: white;
     font-family: 'Alatsi';
@@ -182,14 +268,31 @@
     font-family: 'Alatsi';
     font-size: 14px;
   }
+  .icon-txt3 {
+    color: var(--mainGreen1);
+    font-family: 'Alatsi';
+    font-size: 10px;
+  }
+  .icon-txt4 {
+    color: var(--mainGreen2);
+    font-family: 'Alatsi';
+    font-size: 10px;
+  }
+  .icon-txt5 {
+    color: var(--mainGreen3);
+    font-family: 'Alatsi';
+    font-size: 10px;
+  }
   .icon-div {
-    width: 40px;
-    height: 90px;
+    width: 50px;
+    height: 70px;
     position: relative;
     top: 0px;
-    padding-top: 20px;
+    padding-top: 25px;
     left: 10px;
     margin-right: 25px;
+    display: flex;
+    flex-direction: column;
   }
   .home-head{
     color:black;
@@ -206,7 +309,7 @@
     left: 0px;
     bottom: 0px;
     overflow: hidden;
-    border-radius: 40px 40px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
   }
   .login-button {
     width: 328px;
@@ -286,17 +389,50 @@
     height: 48px;
     font-family: 'Alatsi';
     color: var(--mainGrey1);
-    background: none;
-    padding-left: 40px;
+    background: white;
+    padding-left: 50px;
     opacity: 1;
     position: absolute;
     top: 0px;
     left: 0px;
-    border: 0.6px solid var(--mainBlue1);
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
+    border: none;
   }
-
+  .icon-search {
+    color: var(--mainGrey1);
+    position: absolute;
+    left: 10px;
+    top: 9px;
+  }
+  .search-div {
+    width: 360px;
+    height: 48px;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+  }
+  .filter-div {
+    width: 360px;
+    height: 48px;
+    position: absolute;
+    left: 10px;
+    top: 78px;
+    padding-left: 15px;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .filter-module {
+    width: 100px;
+    height: 48px;
+    padding-top: 15px;
+    margin-left: 5px;
+  }
+  .lable-txt {
+    color: var(--mainGreen1);
+  }
   .login-input2 {
     width: 328px;
     height: 48px;

@@ -25,35 +25,82 @@
         
         <div class="bottom-div">
 
-            <div class="home-bottom-bar">
-                <input class="search" type="text" name="username" placeholder="Search now" required />
+            <div class="search-div">
+                <input class="search" type="text" name="search-keyword" placeholder="Search now" required />
+                <i class="material-icons icon-search" style="font-size: 30px;">search</i>
+            </div>
+
+            <div class="filter-div">
+                <div class="filter-module">
+                    <input type="checkbox" id="html" name="fav_language" value="HTML">
+                    <label for="html" class="lable-txt">In Stock</label><br>
+                </div>
+                <div class="filter-module">
+                    <input type="checkbox" id="css" name="fav_language" value="CSS">
+                    <label for="css" class="lable-txt">On Sale</label><br>
+                </div>
+                <div class="filter-module">
+                    <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript" class="lable-txt">Sold Out</label>
+                </div>
             </div>
 
             <div class="home-reservation">
-                <span class="home-head">Coming Reservation</span>
-                <button class="give-reservation" type="submit" name="in-details-page" value="in-details">
-                    <div class="icon-div">
-                        <i class="material-icons icon-in" style="font-size: 40px;">archive</i>
-                        <span class="icon-txt1">IN</span>
-                    </div>
-                    <div class="info-div">
-                        <span class="reservation-name">Alice07 (20676790)</span>
-                        <span class="reservation-time">2022.12.15 18:00-18:30</span>
-                    </div>
-                </button>
-                <button class="give-reservation" type="submit" name="out-details-page" value="out-details">
-                    <div class="icon-div">
-                        <i class="material-icons icon-out" style="font-size: 40px;">unarchive</i>
-                        <span class="icon-txt2">OUT</span>
-                    </div>
-                    <div class="info-div">
-                        <span class="reservation-name">Alice07 (20676790)</span>
-                        <span class="reservation-time">2022.12.15 18:00-18:30</span>
+                <button class="items-block" type="submit" name="item-details-page1" value="item-details1">
+                    <div class="image-div"></div>
+                    <div class="description-div">
+                        <div class="icon-div">
+                            <i class="material-icons icon-onsale" style="font-size: 30px;">store</i>
+                            <span class="icon-txt3">ON SALE</span>
+                        </div>
+                        <div class="info-div-left">
+                            <span class="name-txt">Sofa</span>
+                            <span class="category-txt">Furniture</span>
+                            <span class="reservation-name">6327469283719</span>
+                            
+                        </div>
+                        <div class="info-div-right">
+                            <span class="price-txt">$200</span>
+                        </div>
                     </div>
                 </button>
-                
+                <button class="items-block" type="submit" name="item-details-page2" value="item-details2">
+                    <div class="image-div"></div>
+                    <div class="description-div">
+                        <div class="icon-div">
+                            <i class="material-icons icon-soldout" style="font-size: 30px;">assignment_turned_in</i>
+                            <span class="icon-txt5">SOLD OUT</span>
+                        </div>
+                        <div class="info-div-left">
+                            <span class="name-txt">Sofa</span>
+                            <span class="category-txt">Furniture</span>
+                            <span class="reservation-name">6327469283719</span>
+                            
+                        </div>
+                        <div class="info-div-right">
+                            <span class="price-txt">$200</span>
+                        </div>
+                    </div>
+                </button>
+                <button class="items-block" type="submit" name="item-details-page2" value="item-details2">
+                    <div class="image-div"></div>
+                    <div class="description-div">
+                        <div class="icon-div">
+                            <i class="material-icons icon-instock" style="font-size: 30px;">indeterminate_check_box</i>
+                            <span class="icon-txt5">IN STOCK</span>
+                        </div>
+                        <div class="info-div-left">
+                            <span class="name-txt">Sofa</span>
+                            <span class="category-txt">Furniture</span>
+                            <span class="reservation-name">6327469283719</span>
+                            
+                        </div>
+                        <div class="info-div-right">
+                            <span class="price-txt">$200</span>
+                        </div>
+                    </div>
+                </button>
             </div>
-
         </div>
     </div>
   </body>
