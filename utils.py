@@ -27,7 +27,7 @@ class User(UserMixin):
         return False
 
     def get_id(self):
-        return self.name + ";" + self.id
+        return self.id
     
 class Account(object):
     def __init__(self, name, password, id, auth="USER", QRcode=None):
