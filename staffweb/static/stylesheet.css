@@ -31,11 +31,20 @@
     left: 34px;
     top: 42px;
   }
+  .go-back {
+    width: 50px;
+    position: absolute;
+    height: 50px;
+    top: 20px;
+    left: 30px;
+    background: none;
+    border: none;
+  }
   .home-logout {
     width: 50px;
     position: absolute;
     height: 50px;
-    top: 50px;
+    top: 20px;
     right: 30px;
     background: none;
     border: none;
@@ -272,6 +281,21 @@
     border-radius: 10px;
     overflow: hidden;
   }
+  .search {
+    width: 360px;
+    height: 48px;
+    font-family: 'Alatsi';
+    color: var(--mainGrey1);
+    background: none;
+    padding-left: 40px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0.6px solid var(--mainBlue1);
+    border-radius: 15px;
+    overflow: hidden;
+  }
 
   .login-input2 {
     width: 328px;
@@ -353,7 +377,7 @@
     width: 343px;
     color: white;
     position: absolute;
-    top: 24px;
+    top: 30px;
     left: 10px;
     font-family: 'Alatsi';
     font-weight: Light;
