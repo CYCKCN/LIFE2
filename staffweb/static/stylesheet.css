@@ -172,6 +172,9 @@
     height: 560px;
     overflow-y: scroll;
   }
+  .form-scroll::-webkit-scrollbar {
+    display: none;
+  }
   .home-reservation::-webkit-scrollbar {
     display: none;
   }
@@ -562,7 +565,137 @@
     background: #4B8173;
     opacity: 0.2;
   }
-
+  .form-div {
+    position: absolute;
+    width: 370px;
+    left: 10px;
+    top:40px;
+    height: 708px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-scroll {
+    position: relative;
+    width: 370px;
+    left: 0px;
+    top: 10px;
+    height: 500px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-div {
+    position: relative;
+    width: 370px;
+    left: 0px;
+    top:0px;
+    height: 80px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .inputs-div {
+    position: relative;
+    width: 370px;
+    left: 0px;
+    top:0px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+  }
+  .lable-div {
+    position: relative;
+    width: 100px;
+    left: 0px;
+    top:0px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Alatsi';
+    font-size: 16px;
+    color: var(--mainGreen2);
+    display: flex;
+    flex-direction: column;
+  }
+  .lable-style1 {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  .lable-style2 {
+    margin-top: 40px;
+    padding-left: 20px;
+  }
+  .input-field-div {
+    position: relative;
+    width: 250px;
+    left: 20px;
+    top:0px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  .submit-style {
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    background: var(--mainGreen1);
+    color: white;
+    font-family: 'Alatsi';
+    width: 370px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .input-style {
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    height: 40px;
+    font-family: 'Alatsi';
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+  }
+  .textarea-style {
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    height: 100px;
+    font-family: 'Alatsi';
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+    margin-top: 0px;
+  }
+  .normal-txt {
+    font-family: 'Alatsi';
+    font-size: 16px;
+    color: black;
+  }
+  .item-id {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .custom-file-upload {
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    background: var(--mainGreen1);
+    color: white;
+    font-family: 'Alatsi';
+    width: 370px;
+    height: 40px;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .custom-file-upload:hover {
+    background: var(--mainGreen3);
+  }
+  
   :root {
     --mainGreen1: #274E45;
     --mainGreen2: #4B8173;
