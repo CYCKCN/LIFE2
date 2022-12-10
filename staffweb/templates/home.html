@@ -12,31 +12,44 @@
         <div class="home-top">
             <span class="home-hi">Hi,</span>
             <span class="home-username">Staff name</span>
-            <div class="home-logout">
-                <i class="material-icons" style="font-size: 35px; color:white;">person</i>
-            </div>
-            
         </div>
 
-      <div class="bottom-div">
-          <div class="home-bottom-bar">
-            <div class="icons-div">
-                <i class="material-icons home-icons" style="font-size: 60px;">archive</i>
-                <i class="material-icons home-icons" style="font-size: 60px;">library_books</i>
-                <i class="material-icons home-icons" style="font-size: 60px;">access_time</i>                
+        <button class="home-logout" value="logout">
+            <i class="material-icons" style="font-size: 35px; color:white;">person</i>
+        </button>
+
+        <div class="bottom-div">
+            <div class="home-bottom-bar">
+                <div id="icons-div">
+                    <button value="items-page">
+                        <i class="material-icons home-icons" style="font-size: 60px;">archive</i>
+                        <span class="home-subtitle">Items</span>
+                    </button>
+                    <button value="contract-page">
+                        <i class="material-icons home-icons" style="font-size: 60px;">library_books</i>
+                        <span class="home-subtitle">Contract</span>
+                    </button>
+                    <button value="reservation-page">
+                        <i class="material-icons home-icons" style="font-size: 60px;">access_time</i> 
+                        <span class="home-subtitle">Reservation</span>
+                    </button>
+                </div>
             </div>
 
-          </div>
+            <div class="home-reservation">
+                <span class="home-head">Coming Reservation</span>
+                <div class="single-reservation">
+                    <span>Buyer/Seller name</span>
+                    <span>Buyer/Seller id</span>
+                    <span>Give/Take</span>
+                    <span>Date, Timeslot</span>
+                </div>
+                <div class="single-reservation"></div>
+                <div class="single-reservation"></div>
+                <div class="single-reservation"></div>
+            </div>
 
-          <div class="home-reservation">
-              <span class="home-head">Coming Reservation</span>
-              <div class="single-reservation"></div>
-              <div class="single-reservation"></div>
-              <div class="single-reservation"></div>
-              <div class="single-reservation"></div>
-          </div>
-
-      </div>
+        </div>
 
 
     </div>
