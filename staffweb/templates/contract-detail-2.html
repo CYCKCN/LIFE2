@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <body>
+    <div class="page-frame">
+
+        <div class="home-top">
+            <span class="home-username">Contract ID: 27342857</span>
+        </div>
+
+        <div>
+            <button class="go-back" type="submit" name="logout-button" value="logout">
+                <i class="material-icons" style="font-size: 30px; color:white;">keyboard_backspace</i>
+            </button>
+
+            <button class="home-logout" type="submit" name="backward" value="back">
+                <i class="material-icons" style="font-size: 30px; color:white;">exit_to_app</i>
+            </button>
+        </div>
+        
+        <div class="bottom-div">
+            <div class="form-div">
+                <span class="heading heading-txt">2. Items For Sale</span>
+                <br />
+                <span class="heading content-txt">Agreements</span>
+                <div class="agreements-div">
+                    <span>Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopnDescription discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn Description discriptopn</span>
+                </div>
+                <div class="contract-div-scroll">
+                    <div class="whole-division">
+                        <div class="dividing-line"></div>
+                        <div class="contract-item">
+                            <div class="lable-div">
+                                <span class="contract-lable0">Item ID</span>
+                                <label for="item-name" class="contract-lable0">Item Name</label>
+                                <label for="item-price" class="contract-lable1">Item Price</label>
+                                <label for="item-description" class="contract-lable1">Remark</label>
+                                <label for="item-description" class="contract-lable1">Video check</label>
+                            </div>
+                            <div class="item-input-div">
+                                <span class="contract-item-id">2374621</span>
+                                <input type="text" id="item-name" name="item-name" class="input-style">
+                                <input type="number" id="item-price" name="item-price" class="input-style">
+                                <textarea id="item-description" name="item-description" class="input-style"></textarea>
+                                <div class="video-check-div">   
+                                    <label for="file-upload" class="video-check-style">Take Video</label>
+                                    <input id="file-upload" name='upload_cont_img' type="file" style="display:none;" accept="video/*">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <button name="contract-detail-1" value="detail-1" class="item-add-style">Add Item</button>
+            <button name="contract-detail-1" value="detail-1" class="create-style">Continue</button>
+        </div>
+    </div>
+  </body>
+  <script>
+    $('#file-upload').change(function() {
+        var i = $(this).prev('label').clone();
+        var file = $('#file-upload')[0].files[0].name;
+        $(this).prev('label').text(file);
+    });
+  </script>
+</html>

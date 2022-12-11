@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <body>
+    <div class="page-frame">
+
+        <div class="home-top">
+            <span class="home-username">Reservation</span>
+        </div>
+
+        <div>
+            <button class="go-back" type="submit" name="logout-button" value="logout">
+                <i class="material-icons" style="font-size: 30px; color:white;">keyboard_backspace</i>
+            </button>
+
+            <button class="home-logout" type="submit" name="backward" value="back">
+                <i class="material-icons" style="font-size: 30px; color:white;">exit_to_app</i>
+            </button>
+        </div>
+        
+        <div class="bottom-div">
+            <div class="form-div">
+                    <div class="icon-in-div">
+                        <i class="material-icons icon-in" style="font-size: 40px;">archive</i>
+                        <span class="icon-txt1 icon-in-txt">IN</span>
+                    </div>
+                    <div class="contract-info-div">
+                        <div class="lable-div">
+                            <span>Date</span>
+                            <br/>
+                            <span>Time</span>
+                        </div>
+                        <div class="input-field-div">
+                            <span>2022.12.15</span>
+                            <br/>
+                            <span>18:00-18:30</span>
+                        </div>
+                    </div>
+                    <div class="contract-info-div">
+                        <div class="lable-div">
+                            <span>Username</span>
+                            <br/>
+                            <span>User ID</span>
+                            <br/>
+                            <span>Receiving Account</span>                            
+                        </div>
+                        <div class="input-field-div">
+                            <span>Amber01</span>
+                            <br/>
+                            <span>2374621</span>
+                            <br/>
+                            <span>None</span>
+                        </div>
+                    </div>
+                    <div class="contract-info-div">
+                        <div class="lable-div">
+                            <span>Item Count</span>
+                            <br/>
+                            <span>Contract</span>
+                        </div>
+                        <div class="input-field-div">
+                            <span>10</span>
+                            <br/>
+                            <span>None</span>
+                        </div>
+                    </div>
+            </div>
+            <button name="contract-detail-1" value="detail-1" class="item-add-style">Contract</button>
+            <button name="contract-detail-1" value="detail-1" class="create-style">Confirm</button>
+        </div>
+    </div>
+  </body>
+  <script>
+    $('#file-upload').change(function() {
+        var i = $(this).prev('label').clone();
+        var file = $('#file-upload')[0].files[0].name;
+        $(this).prev('label').text(file);
+    });
+  </script>
+</html>
