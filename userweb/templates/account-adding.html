@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/user.css">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <body>
+    <div class="page-frame">
+        <div class="home-top">
+            <button class="go-back" type="submit" name="logout-button" value="logout">
+                <i class="material-icons" style="font-size: 40px; color:black;">chevron_left</i>
+            </button>
+            <button class="home-logout" type="submit" name="backward" value="back">
+                <i class="material-icons" style="font-size: 30px; color:black;">menu</i>
+            </button>
+        </div>
+        <div class="payment-list">
+            <div class="payments-block">
+                <table>
+                    <tbody>
+                      <tr class="tr-style">
+                        <td class="td-style">
+                            <input class="payment" type="radio" id="donate1" name="donate" value="all">
+                            <div class="pay-div paypal-div"></div>
+                        </td>
+                        <td class="td-style">
+                            <input class="payment" type="radio" id="donate1" name="donate" value="all">
+                            <div class="pay-div ali-div"></div>
+                        </td>
+                      </tr>
+                      <tr class="tr-style">
+                        <td class="td-style">
+                            <input class="payment" type="radio" id="donate1" name="donate" value="all">
+                            <div class="pay-div payme-div"></div>
+                        </td>
+                        <td class="td-style">
+                            <input class="payment" type="radio" id="donate1" name="donate" value="all">
+                            <div class=" pay-div wechat-div"></div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="payment-display">
+                <img src="sample-receiving.jpeg" alt="QR Code" width="240">
+            </div>
+        </div>   
+        <label for="file-upload" class="item-add-style">Upload QR Code</label>
+        <input id="file-upload" name='upload_cont_img' type="file" style="display:none;">
+        <button name="create-contract" value="new-contract" class="account-style">Finish</button>
+    </div>
+  </body>
+</html>

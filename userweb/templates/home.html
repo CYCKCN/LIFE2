@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <body>
+    <div class="page-frame">
+        <div class="home-top">
+            <p class="user-title">LIFE 2</p>
+            <button class="home-logout" type="submit" name="backward" value="back">
+                <i class="material-icons" style="font-size: 30px; color:black;">menu</i>
+            </button>
+        </div>
+        <div class="scroll-div">
+            <br/><br/>
+            <p class="welcoming">Wellcome to LIFE2!</p>
+            <p class="welcoming">Collection period is OPEN from Dec 1 to Jan 15!</p>
+            <p class="welcoming">And feel free to scroll down and browse the second-hand items that are currently on sale!</p>
+            <br/><br/>
+            <div class="header" id="myHeader">
+                <button class="account-style">Contribute My Items</button>
+                <br/>
+                <div class="on-sale-div">
+                    <div class="search-div">
+                        <input class="search" type="search" name="search-keyword" placeholder="Search now" required />
+                        <i class="material-icons icon-search" style="font-size: 20px;">search</i>
+                    </div>
+        
+                    <div class="filter-div">
+                        <select class="button-option">
+                            <option value="Donation" selected>Category</option>
+                            <option value="Sale">Sale</option>
+                        </select>
+                        <select class="button-option">
+                            <option value="Donation" selected>Price</option>
+                            <option value="Sale">Sale</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="table-div">
+                <div class="display-table">
+                    <div class="display-row">
+                        <div class="on-sale-block"></div>
+                        <div class="on-sale-block"></div>
+                    </div>
+                    <div class="display-row">
+                        <div class="on-sale-block"></div>
+                        <div class="on-sale-block"></div>
+                    </div>
+                    <div class="display-row">
+                        <div class="on-sale-block"></div>
+                        <div class="on-sale-block"></div>
+                    </div>
+                    <div class="display-row">
+                        <div class="on-sale-block"></div>
+                        <div class="on-sale-block"></div>
+                    </div>
+                    <div class="display-row">
+                        <div class="on-sale-block"></div>
+                        <div class="on-sale-block"></div>
+                    </div>
+                    <div class="display-row">
+                        <div class="on-sale-block"></div>
+                        <div class="on-sale-block"></div>
+                    </div>
+                    <div class="display-row">
+                        <div class="on-sale-block"></div>
+                        <div class="on-sale-block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+        }
+    </script>
+</html>

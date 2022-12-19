@@ -4,6 +4,79 @@
   body {
     font-size: 14px;
   }
+  input[type=checkbox] {
+    display: none;
+  }
+  .radio-button {
+      height: 40px;
+      display: flex;
+      flex-direction: row;
+  }
+  .payment-radio {
+    margin-top: 0px;
+    position: relative;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+  }
+  .payment {
+      margin-top: 20px;
+      margin-left: 10px;
+  }
+  .payment input[type="radio"] {
+    top: 10px;
+    position: relative;
+  }  
+  .blank {
+    height: 30px;
+    width: 20px;
+  }
+  .estimation {
+      color: var(--mainOrgange);
+      font-size: 24px;
+      text-align: center;
+  }
+  .done-icon {
+      color: var(--mainGreen2);
+      margin-left: 120px;
+      margin-top: 130px;
+      margin-bottom: 50px;
+  }
+  .sucessful-reserve {
+      margin-left: 10px;
+  }
+  .link-here {
+      color: var(--mainOrgange);
+  }
+  .button-option {
+    height: 30px;
+    width: 163px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 2px;
+    border: none;
+    font-family: 'Alatsi';
+    cursor: pointer;
+  }
+  .radio-button input[type="radio"] {
+    display: none;
+  }      
+  .radio-button label {
+    height: 30px;
+    width: 163px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 6px;
+    border: none;
+    font-family: 'Alatsi';
+    cursor: pointer;
+  }      
+  .radio-button input[type="radio"]:checked+label {
+    background-color: var(--mainGreen2);
+    color: white;
+  }
   .page-frame-login {
     width: 390px;
     height: 844px;
@@ -17,7 +90,7 @@
   .page-frame {
     width: 390px;
     height: 844px;
-    background: var(--mainGreen2);
+    background: var(--mainGrey2);
     opacity: 1;
     position: relative;
     top: 0px;
@@ -25,27 +98,92 @@
     overflow: hidden;
   }
   .home-top {
-    width: 322px;
-    position: absolute;
-    height: 100px;
-    left: 34px;
-    top: 42px;
-  }
-  .go-back {
-    width: 50px;
+    width: 390px;
     position: absolute;
     height: 50px;
-    top: 20px;
-    left: 30px;
+    left: 0px;
+    top: 0px;
+    padding-left: 0px;
+    padding-top: 5px;
+    background: white;
+  }
+  .content {
+      width: 390px;
+      height: 100px;
+      margin-top: 50px;
+      padding-top: 20px;
+      padding-left: 25px;
+      padding-right: 25px;
+      position: relative;
+      font-family: 'Alatsi';
+      color: black;   
+  }
+  .main-div {
+    width: 390px;
+    height: fit-content;
+    margin-top: 60px;
+    position: relative;
+    background: none;
+}
+.num-option {
+    display: flex;
+    flex-direction: row;
+    width:320px;
+}
+.num-items {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 0px;
+    padding-left: 10px;
+    font-family: 'Alatsi';
+}
+
+  .question-box {
+    width: 370px;
+    height: fit-content;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    position: relative;
+    font-family: 'Alatsi';
+    color: black;   
+    background: var(--mainGreen3);
+  }
+  .go-back {
     background: none;
     border: none;
   }
-  .home-logout {
-    width: 50px;
+  .code-detail {
+    background: none;
+    border: none;
     position: absolute;
-    height: 50px;
-    top: 20px;
-    right: 30px;
+    right: 5px;
+    top: 60px;
+  }
+  .td-style {
+    width: 180px;
+    height: 60px;
+    padding-left: 10px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+  .tr-style {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+  }
+  .home-logout {
+    position: absolute;
+    right: 10px;
+    top: 10px;
     background: none;
     border: none;
   }
@@ -234,12 +372,42 @@
   .contract-div-scroll::-webkit-scrollbar {
     display: none;
   }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
   .items-block {
     position: relative;
     width: 370px;
     left: 0px;
     top: 0px;
-    height: 272px;
+    height: 195px;
+    background: white;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+    border: none;
+  }
+  .payments-block {
+    position: relative;
+    width: 370px;
+    left: 0px;
+    top: 0px;
+    height: 142px;
+    background: white;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+    border: none;
+  }
+  .payment-display {
+    position: relative;
+    width: 370px;
+    left: 0px;
+    top: 0px;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
     background: white;
     border-radius: 20px 20px 20px 20px;
     margin-top: 10px;
@@ -252,10 +420,52 @@
     top: 0px;
     height: 200px;
     border-radius: 20px 20px 0px 0px;
-    background-image: url('staffweb/image/sample-sofa.jpeg');
+    background-image: url('userweb/image/sample-sofa.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
+  }
+  .pay-div {
+    position: relative;
+    margin-top: 10px;
+    padding-top: 0px;
+    margin-left: 10px;
+    height: 40px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+  }
+  .ali-div {
+    background-image: url('userweb/image/alipay.png');
+  }
+  .wechat-div {
+    background-image: url('userweb/image/wechatpay.png');
+  }
+  .paypal-div {
+    background-image: url('userweb/image/paypal.png');
+  }
+  .payme-div {
+    background-image: url('userweb/image/payme.jpeg');
+  }
+  .code-div {
+    position: absolute;
+    width: 120px;
+    right: 60px;
+    top: 10px;
+    height: 163px;
+    background-image: url('userweb/image/sample-receiving.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+  }
+  .method-name {
+    font-family: 'Alatsi';
+    font-size: 16px;
+    color: var(--mainBlue1);
+    top: 0px;
+    margin-left: 10px;
+    position: absolute;
   }
   .receiving-div {
     position: relative;
@@ -264,7 +474,7 @@
     top: 0px;
     height: 200px;
     border-radius: 20px 20px 20px 20px;
-    background-image: url('staffweb/image/sample-receiving.jpeg');
+    background-image: url('userweb/image/sample-receiving.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
@@ -784,7 +994,7 @@
   }
   .lable-div {
     position: relative;
-    width: 100px;
+    width: 280px;
     left: 0px;
     top: 0px;
     height: fit-content;
@@ -792,7 +1002,7 @@
     flex-direction: column;
     font-family: 'Alatsi';
     font-size: 16px;
-    color: var(--mainGreen2);
+    color: var(--mainBlue1);
     padding-left: 0px;
     text-align: left;
   }
@@ -810,6 +1020,14 @@
     width: 370px;
     background: var(--mainGreen3);
     border-radius: 5px 5px 5px 5px;
+  }
+  .user-style1 {
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+  .user-style2 {
+    margin-top: 30px;
+    padding-left: 0px;
   }
   .lable-style1 {
     margin-top: 10px;
@@ -850,6 +1068,20 @@
     font-family: 'Alatsi';
     font-size: 16px;
   }
+  .not-uploaded {
+      color: var(--mainOrgange);
+  }
+  .upload-icon {
+    margin-top: 15px;
+    color:var(--mainBlue1);
+  }
+  .upload-icon:active {
+    border: none;
+  }
+  .uploading {
+      display: flex;
+      flex-direction: row;
+  }
   .submit-style {
     position: relative;
     margin-top: 30px;
@@ -870,7 +1102,7 @@
     text-align: center;
     line-height: 40px;
     border: none;
-    background: var(--mainGreen2);
+    background: var(--mainBlue2);
     color: white;
     font-family: 'Alatsi';
     width: 370px;
@@ -878,6 +1110,13 @@
     border-radius: 10px;
     cursor: pointer;
     margin-left: 10px;
+  }
+  .user-title {
+      font-family: 'Alatsi';
+      font-size: 20px;
+      color: black;
+      margin-left: 20px;
+      margin-top: 10px;
   }
   .create-style {
     position: absolute;
@@ -893,6 +1132,59 @@
     border-radius: 10px;
     cursor: pointer;
     margin-left: 10px;
+  }
+  .account-style {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    background: var(--mainGreen1);
+    color: white;
+    font-family: 'Alatsi';
+    width: 370px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .account-add {
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    background: var(--mainBlue1);
+    color: white;
+    font-family: 'Alatsi';
+    width: 370px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .account-list {
+      position: absolute;
+      top: 120px;
+      height:fit-content;
+      width: 370px;
+      margin-left: 10px;
+  }
+  .payment-list {
+    position: absolute;
+    top: 50px;
+    height:fit-content;
+    width: 370px;
+    margin-left: 10px;
+}
+  .create-style:active {
+    background: var(--mainGreen3);
+  }
+  .account-style:active {
+    background: var(--mainBlue2);
+  }
+  .account-add:active {
+    background: var(--mainBlue2);
   }
   .item-id-style {
     position: relative;
@@ -1041,157 +1333,4 @@
     
     --mainGrey1: #6C6A6A;
     --mainGrey2: #F2F2F2;
-
-    --calendar-bg-color: #262829;
-    --calendar-font-color: #FFF;
-    --weekdays-border-bottom-color: #404040;
-    --calendar-date-hover-color: #505050;
-    --calendar-current-date-color: #1b1f21;
-    --calendar-today-color: linear-gradient(to bottom, #03a9f4, #2196f3);
-    --calendar-today-innerborder-color: transparent;
-    --calendar-nextprev-bg-color: transparent;
-    --next-prev-arrow-color : #FFF;
-    --calendar-border-radius: 16px;
-    --calendar-prevnext-date-color: #484848
   }
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
-
-.calendar {
-    font-family: 'IBM Plex Sans', sans-serif;
-    position: relative;
-    max-width: 400px; /*change as per your design need */
-    min-width: 320px;
-    background: var(--calendar-bg-color);
-    color: var(--calendar-font-color);
-    margin: 20px auto;
-    box-sizing: border-box;
-    overflow: hidden;
-    font-weight: normal;
-    border-radius: var(--calendar-border-radius);
-}
-
-.calendar-inner {
-    padding: 10px 10px;
-}
-
-.calendar .calendar-inner .calendar-body {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    text-align: center;
-}
-
-.calendar .calendar-inner .calendar-body div {
-    padding: 4px;
-    min-height: 30px;
-    line-height: 30px;
-    border: 1px solid transparent;
-    margin: 10px 2px 0px;
-}
-
-.calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
-    border: 1px solid transparent;
-    border-bottom: 1px solid var(--weekdays-border-bottom-color);
-}
-
-.calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
-    border: 1px solid transparent;
-    border-bottom: 1px solid var(--weekdays-border-bottom-color);
-}
-
-.calendar .calendar-inner .calendar-body div>a {
-    color: var(--calendar-font-color);
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-}
-
-.calendar .calendar-inner .calendar-body div:hover {
-    border: 1px solid var(--calendar-date-hover-color);
-    border-radius: 4px;
-}
-
-.calendar .calendar-inner .calendar-body div.empty-dates:hover {
-    border: 1px solid transparent;
-}
-
-.calendar .calendar-inner .calendar-controls {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.calendar .calendar-inner .calendar-today-date {
-    display: grid;
-    text-align: center;
-    cursor: pointer;
-    margin: 3px 0px;
-    background: var(--calendar-current-date-color);
-    padding: 8px 0px;
-    border-radius: 10px;
-    width: 80%;
-    margin: auto;
-}
-
-.calendar .calendar-inner .calendar-controls .calendar-year-month {
-    display: flex;
-    min-width: 100px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.calendar .calendar-inner .calendar-controls .calendar-next {
-    text-align: right;
-}
-
-.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-year-label,
-.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-month-label {
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.calendar .calendar-inner .calendar-body .calendar-today {
-    background: var(--calendar-today-color);
-    border-radius: 4px;
-}
-
-.calendar .calendar-inner .calendar-body .calendar-today:hover {
-    border: 1px solid transparent;
-}
-
-.calendar .calendar-inner .calendar-body .calendar-today a {
-    outline: 2px solid var(--calendar-today-innerborder-color);
-}
-
-.calendar .calendar-inner .calendar-controls .calendar-next a,
-.calendar .calendar-inner .calendar-controls .calendar-prev a {
-    color: var(--calendar-font-color);
-    font-family: arial, consolas, sans-serif;
-    font-size: 26px;
-    text-decoration: none;
-    padding: 4px 12px;
-    display: inline-block;
-    background: var(--calendar-nextprev-bg-color);
-    margin: 10px 0 10px 0;
-}
-
-.calendar .calendar-inner .calendar-controls .calendar-next a svg,
-.calendar .calendar-inner .calendar-controls .calendar-prev a svg {
-    height: 20px;
-    width: 20px;
-}
-
-.calendar .calendar-inner .calendar-controls .calendar-next a svg path,
-.calendar .calendar-inner .calendar-controls .calendar-prev a svg path{
-    fill: var(--next-prev-arrow-color);
-}
-
-.calendar .calendar-inner .calendar-body .prev-dates,
-.calendar .calendar-inner .calendar-body .next-dates {
-    color: var(--calendar-prevnext-date-color);
-}
-
-.calendar .calendar-inner .calendar-body .prev-dates:hover,
-.calendar .calendar-inner .calendar-body .next-dates:hover {
-  border: 1px solid transparent;
-  pointer-events: none;
-}

@@ -7,7 +7,7 @@
   .page-frame-login {
     width: 390px;
     height: 844px;
-    background: white;
+    background: var(--mainGrey2);
     opacity: 1;
     position: relative;
     top: 0px;
@@ -31,6 +31,16 @@
     left: 34px;
     top: 42px;
   }
+  .home-top-new {
+    width: 390px;
+    position: absolute;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    padding-left: 0px;
+    padding-top: 5px;
+    background: white;
+  }
   .go-back {
     width: 50px;
     position: absolute;
@@ -40,12 +50,23 @@
     background: none;
     border: none;
   }
+  .go-back-new {
+    background: none;
+    border: none;
+  }
   .home-logout {
     width: 50px;
     position: absolute;
     height: 50px;
     top: 20px;
     right: 30px;
+    background: none;
+    border: none;
+  }
+  .home-logout-new {
+    position: absolute;
+    right: 10px;
+    top: 10px;
     background: none;
     border: none;
   }
@@ -252,7 +273,7 @@
     top: 0px;
     height: 200px;
     border-radius: 20px 20px 0px 0px;
-    background-image: url('staffweb/image/sample-sofa.jpeg');
+    background-image: url('userweb/image/sample-sofa.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
@@ -264,7 +285,7 @@
     top: 0px;
     height: 200px;
     border-radius: 20px 20px 20px 20px;
-    background-image: url('staffweb/image/sample-receiving.jpeg');
+    background-image: url('userweb/image/sample-receiving.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
@@ -431,16 +452,40 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: hidden;
+    border: none;
+  }
+  .signup-button {
+    width: 328px;
+    height: 40px;
+    font-family: 'Alatsi';
+    color: white;
+    background: var(--mainGreen1);
+    opacity: 1;
+    position: relative;
+    margin-top: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    border: none;
   }
   .logo {
     width: 156px;
     height: 96px;
     opacity: 1;
     position: absolute;
-    top: 216px;
-    left: 135px;
+    top: 116px;
+    left: 133px;
     overflow: hidden;
   }
+  .user-title {
+    font-family: 'Alatsi';
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+ }
   .logo-life {
     width: 139px;
     color: var(--mainGreen1);
@@ -470,8 +515,32 @@
     height: 300px;
     opacity: 1;
     position: absolute;
-    top: 345px;
+    top: 245px;
     left: 30px;
+    overflow: hidden;
+  }
+  .signup-div {
+    width: 328px;
+    height: fit-content;
+    opacity: 1;
+    position: absolute;
+    top: 245px;
+    left: 30px;
+    overflow: hidden;
+  }
+  .login-input {
+    width: 328px;
+    height: 48px;
+    font-family: 'Alatsi';
+    color: var(--mainGrey1);
+    background: white;
+    padding-left: 20px;
+    opacity: 1;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
     overflow: hidden;
   }
   .login-input1 {
@@ -479,13 +548,13 @@
     height: 48px;
     font-family: 'Alatsi';
     color: var(--mainGrey1);
-    background: none;
+    background: white;
     padding-left: 20px;
     opacity: 1;
     position: absolute;
     top: 0px;
     left: 0px;
-    border: 0.6px solid var(--mainBlue1);
+    border: none;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -545,13 +614,13 @@
     height: 48px;
     font-family: 'Alatsi';
     color: var(--mainGrey1);
-    background: none;
+    background: white;
     padding-left: 20px;
     opacity: 1;
     position: absolute;
     top: 59px;
     left: 0px;
-    border: 0.6px solid var(--mainBlue1);
+    border: none;
     border-radius: 10px;
     overflow: hidden;
   }
